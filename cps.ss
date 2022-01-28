@@ -246,7 +246,7 @@
     (let ([init (initial-expr e)])
       (match init
         [,x (guard (or (number? x) (symbol? x))) `(,k ,x)]
-        [(quote ())  `(k '())]
+        [(quote ())  `(,k '())]
         [(lambda (,v ...) ,body)
           `(,k ,(cps init))]
         [(,op ,rands ...) (guard (prim? op))
