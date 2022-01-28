@@ -1,5 +1,7 @@
 # CPS | A Note about EOPL-1st chapter 8
 
+(I use chez scheme)
+
 #### Step1
 
 target language
